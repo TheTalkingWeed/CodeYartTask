@@ -89,6 +89,28 @@ export default {
         color:black;
     }
 
+    @media (max-width:320px){
+        .text-container{
+            width:80%;
+        }
+    }
+
+    @media (min-width:320px) and (max-width:375px){
+        .text-container{
+            width:80%;
+        }
+    }
+    @media (min-width:375px) and (max-width:425px){
+        .text-container{
+            width:80%;
+        }
+    }
+    @media (min-width:425px) and (max-width:768px){
+        .text-container{
+            width:90%;
+        }
+    }
+
 
    
 </style>

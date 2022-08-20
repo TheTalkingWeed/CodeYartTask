@@ -115,7 +115,7 @@
     .signup-container{
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 400px;
         padding:35px;
         border-radius: 10px;
         font-family: 'Open Sans', sans-serif;
@@ -314,6 +314,127 @@
         z-index: 50;
     }
 
+      @media (max-width:320px){
+        .signup-container{
+            width:85%;
+            margin:0;
+        }
+
+        .sign-up-button{
+            margin:auto;
+            margin-top: 25px;
+        }
+
+        .strength-bar{
+            left:96%;
+        }
+
+        .open-eye{
+            left:85%;
+        }
+
+        .closed-eye{
+            left:85%;
+        }
+
+      }
+      @media (min-width:320px) and (max-width:375px){
+        .signup-container{
+            width:90%;
+            margin:0;
+        }
+
+        .sign-up-button{
+            margin:auto;
+            margin-top: 25px;
+        }
+
+        .strength-bar{
+            left:96%;
+        }
+
+        .open-eye{
+            left:85%;
+        }
+
+        .closed-eye{
+            left:85%;
+        }
+
+      }
+      @media (min-width:375px) and (max-width:425px){
+        .signup-container{
+            width:95%;
+            margin:0;
+        }
+
+        .sign-up-button{
+            margin:auto;
+            margin-top: 25px;
+        }
+
+        .strength-bar{
+            left:97%;
+        }
+
+        .open-eye{
+            left:88%;
+        }
+
+        .closed-eye{
+            left:88%;
+        }
+
+      }
+      @media (min-width:425px) and (max-width:768px){
+        .signup-container{
+            width:95%;
+            margin:0;
+        }
+
+        .sign-up-button{
+            margin:auto;
+            margin-top: 25px;
+        }
+
+        .strength-bar{
+            left:97%;
+        }
+
+        .open-eye{
+            left:88%;
+        }
+
+        .closed-eye{
+            left:88%;
+        }
+
+      }
+      @media (min-width:768px) and (max-width:1024px){
+        .signup-container{
+            width:90%;
+            margin:0;
+        }
+
+        .sign-up-button{
+            margin:auto;
+            margin-top: 25px;
+        }
+
+        .strength-bar{
+            left:97%;
+        }
+
+        .open-eye{
+            left:88%;
+        }
+
+        .closed-eye{
+            left:88%;
+        }
+
+      }
+      
     
 
 

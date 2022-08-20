@@ -54,7 +54,26 @@ export default {
         cursor: pointer;
     }
 
-
+    @media (max-width:320px){
+        .bottom-container{
+            margin-top: 10px;
+        }
+    }
+    @media (min-width:320px) and (max-width:375px){
+        .bottom-container{
+            margin-top: 10px;
+        }
+    }
+    @media (min-width:375px) and (max-width:425px){
+        .bottom-container{
+            margin-top: 10px;
+        }
+    }
+    @media (min-width:425px) and (max-width:768px){
+        .bottom-container{
+            margin-top: 10px;
+        }
+    }
 
 
   
