@@ -31,7 +31,7 @@
         </div>
 
 
-        <Button class="sign-up-btn" text="Sign up"> </Button>
+        <Button class="sign-up-btn" text="Sign up" @btn-clicked="getUserInputs"> </Button>
     </div>
 </template>
 
@@ -43,7 +43,11 @@
 
         data(){
             return{
-                strength:""
+                strength:"",
+                userinput:{
+                    email: "",
+                    password:""
+                }
             }
         },
 
@@ -101,6 +105,16 @@
                 this.strength = output
             },
 
+            getUserInputs(){
+
+                const emailinput = document.getElementById('email').value
+                const passwordinput = document.getElementById('password').value
+
+                this.userinput.email = emailinput
+                this.userinput.password = passwordinput
+                
+                console.log(this.userinput);
+            }
             
 
         }
@@ -326,7 +340,7 @@
         }
 
         .strength-bar{
-            left:96%;
+            left:98%;
         }
 
         .open-eye{
@@ -402,11 +416,11 @@
         }
 
         .open-eye{
-            left:88%;
+            left:87%;
         }
 
         .closed-eye{
-            left:88%;
+            left:87%;
         }
 
       }

@@ -1,5 +1,5 @@
 <template>
-    <button class="sign-up-button">{{text}}</button>    
+    <button class="sign-up-button" @click="$emit('btn-clicked')"  >{{text}}</button>   
 </template>
 
 <script>
@@ -8,7 +8,9 @@ export default {
 
     props:{
         text:String
-    }
+    },
+
+
 }
 </script>
 
