@@ -109,6 +109,11 @@ export default {
         .text-container{
             width:90%;
         }
+
+        .acme-img{
+            width:20%;
+        }       
+
     }
 
 

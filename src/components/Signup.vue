@@ -107,14 +107,20 @@
 
             getUserInputs(){
 
-                const emailinput = document.getElementById('email').value
-                const passwordinput = document.getElementById('password').value
+                const emailinput = document.getElementById('email')
+                const passwordinput = document.getElementById('password')
 
-                this.userinput.email = emailinput
-                this.userinput.password = passwordinput
+                this.userinput.email = emailinput.value
+                this.userinput.password = passwordinput.value
                 
-                console.log(this.userinput);
+                this.$emit('get-userinput',this.userinput)
+
+                emailinput.value = null
+                passwordinput.value = null
+                this.strength = 'none'
             }
+
+            
             
 
         }
@@ -376,7 +382,7 @@
         }
 
       }
-      @media (min-width:375px) and (max-width:425px){
+      @media (min-width:375px) and (max-width:426px){
         .signup-container{
             width:95%;
             margin:0;
@@ -400,7 +406,7 @@
         }
 
       }
-      @media (min-width:425px) and (max-width:768px){
+      @media (min-width:426px) and (max-width:768px){
         .signup-container{
             width:95%;
             margin:0;
@@ -412,15 +418,15 @@
         }
 
         .strength-bar{
-            left:97%;
+            left:98%;
         }
 
         .open-eye{
-            left:87%;
+            left:93%;
         }
 
         .closed-eye{
-            left:87%;
+            left:93%;
         }
 
       }

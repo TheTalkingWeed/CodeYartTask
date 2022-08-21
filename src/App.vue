@@ -2,7 +2,7 @@
  <div class="main-container">
    <div class="left-container">
     <div class="container">
-      <Signup></Signup>
+      <Signup @get-userinput="handleUserinput"></Signup>
       <Term></Term>
     </div>
   </div>
@@ -15,8 +15,8 @@
 <script>
   import Signup from './components/Signup.vue'
   import Term from './components/Term.vue'
-  import HaveAccount from './components/HaveAccount.vue';
-  
+  import HaveAccount from './components/HaveAccount.vue'
+  import axios from 'axios'
 
   export default {
     name: 'App',
@@ -24,7 +24,25 @@
     Term,
     Signup,
     HaveAccount
-}
+    },
+
+    methods:{
+      handleUserinput(userinput){
+        var data = ({
+          data:{
+            email:userinput.email,
+            password:userinput.password
+            }
+        })
+
+        axios.post('https://us-central1-ria-server-b1103.cloudfunctions.net/authenticate',data)
+          .then(response => console.log(response))
+          .catch(error => console.log(error))
+      }
+    }
+
+
+
   }
 </script>
 
@@ -128,13 +146,14 @@
     }
 
     .main-container{
-      flex-direction: row;
-      gap: 40px;
+      flex-direction: column;
+      gap: 60px;
     }
 
     .container{
-      width:75%;
+      width:80%;
       margin: auto;
+      margin-top: 30px;
       
     } 
   }
