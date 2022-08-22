@@ -139,7 +139,7 @@
         padding:35px;
         border-radius: 10px;
         font-family: 'Open Sans', sans-serif;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
     }
 
     .top-text h1{
